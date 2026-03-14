@@ -9,6 +9,7 @@ import Footer from "@/app/Components/Footer/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
 import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import { API_BASE_URL } from "@/app/lib/api.js";
 
 declare global {
   interface Window {
@@ -52,7 +53,7 @@ export default function AppointmentPage() {
 
   // Fetch Doctor
   useEffect(() => {
-    fetch(`http://localhost:5001/api/doctors/${doctorId}`)
+    fetch(`${API_BASE_URL}/api/doctors/${doctorId}`)
       .then((res) => res.json())
       .then((data) => setDoctor(data));
   }, [doctorId]);
@@ -60,7 +61,7 @@ export default function AppointmentPage() {
   // Fetch Slots
   useEffect(() => {
     fetch(
-      `http://localhost:5001/api/availability?doctorId=${doctorId}&date=2026-03-12`,
+      `${API_BASE_URL}/api/availability?doctorId=${doctorId}&date=2026-03-12`,
     )
       .then((res) => res.json())
       .then((data) => {
@@ -100,7 +101,7 @@ export default function AppointmentPage() {
       setSubmitLoading(true);
 
       const res = await fetch(
-        "http://localhost:5001/api/payment/create-order",
+        `${API_BASE_URL}/api/payment/create-order`,
         {
           method: "POST",
           headers: {
@@ -124,7 +125,7 @@ export default function AppointmentPage() {
 
         handler: async function (response: any) {
           const verifyRes = await fetch(
-            "http://localhost:5001/api/payment/verify",
+            `${API_BASE_URL}/api/payment/verify`,
             {
               method: "POST",
               headers: {
@@ -206,7 +207,7 @@ export default function AppointmentPage() {
             {/* LEFT: DOCTOR PROFILE */}
             <div className={styles.doctorProfileSection}>
               <img
-                src={`http://localhost:5001${doctor.profileImage}`}
+                src={`${API_BASE_URL}${doctor.profileImage}`}
                 alt="Doctor"
                 className={styles.doctorImage}
               />

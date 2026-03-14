@@ -5,16 +5,16 @@ import styles from "@/app/doctors/doctors.module.css";
 import { useRouter } from "next/navigation";
 import Header from "../Components/Header/Header";
 import MyNavbar from "../Components/MyNavbar/MyNavbar";
-
+import { API_BASE_URL } from "@/app/lib/api.js";
 
 export default function DoctorsPage(){
   const router = useRouter();
     const [doctors, setDoctors] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5001/api/doctors")
-        .then(res => res.json())
-        .then(data => setDoctors(data));
+        fetch(`${API_BASE_URL}/api/doctors`)
+          .then((res) => res.json())
+          .then((data) => setDoctors(data));
     },[]);
 
     return (

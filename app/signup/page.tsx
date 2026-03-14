@@ -7,6 +7,7 @@ import Lottie from "lottie-react";
 import signUpAnim from "@/public/Animation/Online Work.json";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { API_BASE_URL } from "@/app/lib/api.js";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -27,7 +28,7 @@ export default function RegisterPage() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5001/api/auth/register", {
+      const res = await fetch(`${API_BASE_URL}/api/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

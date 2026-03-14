@@ -5,7 +5,7 @@ import styles from "@/app/dashboard/doctor/doctor.module.css";
 import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import Footer from "@/app/Components/Footer/Footer";
-
+import { API_BASE_URL } from "@/app/lib/api.js";
 
 export default function DoctorDashboard() {
   const [appointments, setAppointments] = useState<any[]>([]);
@@ -22,7 +22,7 @@ export default function DoctorDashboard() {
 
       try {
         const apptRes = await fetch(
-          "http://localhost:5001/api/appointments/doctor",
+          `${API_BASE_URL}/api/appointments/doctor`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },
@@ -40,7 +40,7 @@ export default function DoctorDashboard() {
        }
 
         const earnRes = await fetch(
-          "http://localhost:5001/api/appointments/earnings",
+          `${API_BASE_URL}/api/appointments/earnings`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },

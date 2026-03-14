@@ -8,6 +8,7 @@ import loadingAnimation from "@/public/Animation/Sandy Loading.json";
 import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import Footer from "@/app/Components/Footer/Footer";
+import { API_BASE_URL } from "@/app/lib/api.js";
 
 export default function PatientDashboard() {
   const [loading, setLoading] = useState(true);
@@ -30,7 +31,7 @@ export default function PatientDashboard() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:5001/api/appointments/my", {
+    fetch(`${API_BASE_URL}/api/appointments/my`, {
       headers: { Authorization: `Bearer ${token}` },
     })
       .then((res) => res.json())
@@ -138,8 +139,8 @@ export default function PatientDashboard() {
                       <div className={styles.doctorInfoGroup}>
                         <div className={styles.doctorImgWrapper}>
                           <img
-                            src={`http://localhost:5001${doc.profileImage}`}
-                            style={{width:"100px", height:"100px"}}
+                            src={`${API_BASE_URL}${doc.profileImage}`}
+                            style={{ width: "100px", height: "100px" }}
                             alt="Doctor"
                           />
                         </div>
@@ -155,8 +156,7 @@ export default function PatientDashboard() {
                               margin: "4px 0",
                             }}
                           >
-                            {doc.specialization ||
-                              "General Physician"}
+                            {doc.specialization || "General Physician"}
                           </p>
                           <div
                             style={{

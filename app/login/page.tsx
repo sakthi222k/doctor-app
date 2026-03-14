@@ -7,7 +7,8 @@ import register from "@/public/Animation/register.json";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
 import loadingAnimation from "@/public/Animation/Sandy Loading.json";
-import toast from "react-hot-toast"
+import toast from "react-hot-toast";
+import {API_BASE_URL}  from "@/app/lib/api.js";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -34,7 +35,7 @@ export default function LoginPage() {
     setSetSubmitLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5001/api/auth/login", {
+      const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
