@@ -1,0 +1,213 @@
+/* Sidebar & Layout */
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fd;
+  font-family: 'Inter', sans-serif;
+  color: #4a5568;
+}
+
+.sideBar {
+  width: 260px;
+  background: white;
+  border-right: 1px solid #edf2f7;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.logoSection{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 3rem;
+}
+
+.logoBox{
+  width: 32px;
+  height: 32px;
+  background: #2563eb;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Navigation */
+.navbarMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.navbarMenuActive{
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+}
+
+/* Main Content */
+.mainContent {
+  flex: 1;
+  padding: 2.5rem;
+  max-width: 1100px;
+}
+
+.headerFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.headerFlex h2 {
+  font-size: 1.8rem;
+  color: #1a202c;
+  margin: 0;
+}
+
+.headerFlex p {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* Doctor Cards */
+.sectionTitle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.doctorList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.doctorCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctorCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.doctorInfoGroup{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.doctorImgWrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #eef2ff;
+}
+
+.doctorImgWrapperimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.consultBtn{
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.consultBtn:hover {
+  background: #1d4ed8;
+}
+
+/* Schedule Grid */
+.scheduleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.scheduleCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 24px;
+  border: 1px solid #edf2f7;
+}
+
+.scheduleHeader{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.iconBox {
+  width: 40px;
+  height: 40px;
+  background: #eff6ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sideBar { display: none; }
+  .doctorCard{ flex-direction: column; align-items: flex-start; }
+  .consultBtn {
+    margin-top: 25px;
+     width: 100%;
+     }
+}

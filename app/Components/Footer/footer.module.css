@@ -1,0 +1,314 @@
+.footer {
+  background-color: #051828;
+  color: #ffffff;
+  display: flex;
+  padding: 90px 65px 70px 65px;
+}
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  height: 466px;
+  padding: 48px 12px 0px 12px;
+}
+.footerContentTitle {
+  font-size: 24px;
+  line-height: 36px;
+}
+.footerLinksContainer {
+  display: flex;
+  width: 350px;
+  height: 466px;
+  margin-top: 10px;
+  padding: 50px 12px 0px 48px;
+  justify-content: space-between;
+}
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+.footerServices {
+  display: flex;
+  flex-direction: column;
+}
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 466px;
+  margin-top: 10px;
+  padding: 50px 12px 0px 48px;
+}
+.footerWorkingContainer {
+  width: 350px;
+  height: 466px;
+  padding: 0px 12px 0px 12px;
+}
+.LogoImage {
+  position: relative;
+  padding-bottom: 15px;
+}
+.LogoImage::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 57px;
+  height: 3.2px;
+  background-color: #2490eb;
+}
+.footerLinksTitle {
+  font-size: 20px;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+.footerLinksTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 57px;
+  height: 3.5px;
+  background-color: #2490eb;
+}
+.footerSocialIcons {
+  display: flex;
+  gap: 15px;
+}
+.socialIcon {
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 200%;
+  background-color: #ffffff1f;
+}
+.navbarLinks {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+.navbarLinks > a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.navbarLinks > a:hover {
+  cursor: pointer;
+  color: #2490eb;
+  transition: 0.4s;
+}
+.footerContactText {
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.footerContactInfo {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0px 0px 0px;
+}
+.socialIcon2 {
+  margin-top: 3px;
+  font-size: 25px;
+  color: #2490eb;
+}
+.socialIcon3 {
+  margin: 4px 5px 0px 3px;
+  font-size: 23px;
+  color: #2490eb;
+}
+.footerContactAddress {
+  font-size: 16px;
+  color: #ffffffcc;
+  font-weight: 600;
+}
+.footerWorking {
+  background-color: #ffffff;
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px 10px 25px;
+  border-radius: 13px;
+  height: 436px;
+  margin-top: 10px;
+}
+.footerWorkingHours {
+  display: flex;
+  justify-content: space-between;
+}
+.footerWorkingText {
+  margin: 12px 0px 30px 0px;
+  font-size: 17px;
+ font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footerWorkingHoursTime {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.footerContactNumber {
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1.7px solid black;
+}
+.footerBooking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-top: 18px;
+}
+.LogoImage3 {
+  margin-left: -8px;
+}
+.footerBottom {
+  background-color: #051828;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px 0px 18px 0px;
+  border-top: 1px solid #555353;
+}
+.footerBottomText {
+  margin-bottom: 0px;
+}
+.scopeImage {
+  position: absolute;
+  margin-top: 300px;
+  left: 140px;
+}
+.shapeImage1 {
+  position: absolute;
+  margin-top: 25px;
+  left: 670px;
+}
+.shapeImage2 {
+  position: absolute;
+  right: 60px;
+  margin-top: 520px;
+}
+.shapeImage3 {
+  position: absolute;
+  margin-top: -200px;
+  right: 30px;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    background-color: #051828;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px 90px 0px;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: fit-content;
+    padding: 48px 15px 0px 15px;
+  }
+  .footerContentTitle {
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .footerLinksContainer {
+    display: flex;
+    width: 100%;
+    height: 365px;
+    margin-top: 10px;
+    padding: 22px 15px 0px 15px;
+    justify-content: flex-start;
+    gap: 110px;
+  }
+  .footerContact {
+    width: 100%;
+    height: fit-content;
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 15px;
+  }
+  .footerWorkingContainer {
+    width: 100%;
+    height: 431px;
+    padding: 0px 12px 0px 12px;
+    z-index: 1;
+  }
+  .footerContactText {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .footerContactInfo {
+    display: flex;
+    gap: 12px;
+    margin: 0px 0px 0px 0px;
+  }
+  .socialIcon2 {
+    margin: 3px 0px 0px 0px;
+  }
+  .socialIcon3 {
+    margin: 4px 0px 0px 1px;
+  }
+  .footerWorking {
+    padding: 30px 25px 10px 25px;
+    border-radius: 13px;
+    height: 431px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .footerWorkingText {
+    margin: 5px 0px 30px 0px;
+    font-size: 18px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .footerWorkingHoursTime {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .footerContactNumber {
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1.7px solid black;
+  }
+  .footerBooking {
+    margin: 10px 30px 10px 98px;
+  }
+  .LogoImage3 {
+    margin: 5px auto;
+  }
+  .footerBottom {
+    z-index: 2;
+  }
+  .scopeImage {
+    margin-top: 1139px;
+    left: 45px;
+    z-index: 0;
+  }
+  .shapeImage1 {
+    margin-top: 50px;
+    left: 230px;
+  }
+  .shapeImage2 {
+    right: 50px;
+    margin-top: 520px;
+  }
+  .shapeImage3 {
+  position: absolute;
+  margin-top: 1220px;
+  right: 30px;
+  display: block;
+}
+}

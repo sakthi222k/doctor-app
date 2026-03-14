@@ -1,0 +1,150 @@
+body {
+  overflow-x: hidden !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+.cursor-pointer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.line-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #b5b0b0;
+  font-size: 14px;
+}
+
+.line-text::before,
+.line-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #b5b0b0;
+  margin: 0 10px;
+}
+.LoginPage {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+}
+.loginsetup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fullAboutSection {
+  margin: 50px 0px 70px 0px;
+}
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.about-text {
+  text-align: center;
+}
+
+.about-doctor-image {
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.sideNavbar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #1c2431;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding: 35px 10px 0px 10px;
+}
+
+.sideNavbar.open {
+  left: 0;
+}
+
+.sideNavbar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sideNavbar .nav-link {
+  color: white !important;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.sideNavbar .nav-link:hover {
+  background-color: #333;
+}
+.xIcon {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: 0;
+  left: 185px;
+  margin-bottom: 17px;
+}
+.xIcon:hover {
+  cursor: pointer;
+  color: #02c9b8;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #c2e3ff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #3398ea;
+}
+.lottieAnime {
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (min-width: 992px) {
+  .sideNavbar {
+    display: none;
+  }
+  .menuIcon {
+    display: none;
+  }
+  .profileIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .LoginPage {
+    width: 400px;
+  }
+  .FullHeroSection::before {
+    background-color: none;
+  }
+  .bg-body-tertiary {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  .fullAboutSection {
+    display: none;
+  }
+  .lottieAnime {
+    width: 400px;
+    height: 400px;
+  }
+}

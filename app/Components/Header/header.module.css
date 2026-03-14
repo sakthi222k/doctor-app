@@ -1,0 +1,23 @@
+.headerContainer{
+    background-color: #172965;
+    color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px 0px 50px;
+}
+.headerOverItems{
+    display: flex;
+    gap: 50px;
+}
+.headerItems{
+    display: flex;
+    gap: 6px;
+}
+@media  screen and (max-width: 600px){
+    .headerContainer{
+        display: none;
+    }
+}

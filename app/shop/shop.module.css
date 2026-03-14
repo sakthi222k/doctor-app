@@ -1,0 +1,213 @@
+.featured {
+  display: flex;
+  flex-direction: column;
+  width: 1214px;
+  margin: auto;
+}
+.featuredTitle {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.featuredDesc {
+  margin: 0px 0px 20px 0px;
+  color: #64748b;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 260px);
+  width: 1214px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d9d8d8;
+  border-radius: 15px;
+  height: fit-content;
+}
+.medicineDetails {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+.medicineName {
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  margin: 5px 0px 0px 0px;
+  padding: 2px 12px 2px 12px;
+}
+.medicineManufacturer {
+  font-size: 10px;
+  color: #000000a6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0px 12px 0px 12px;
+  margin: 0px 0px 0px 0px;
+}
+.medicineDescription {
+  font-size: 12px;
+  color: #b5b5b5;
+  padding: 4px 12px 4px 12px;
+  margin: 0px 0px 0px 0px;
+}
+.medicinePrice {
+  font-size: 14px;
+  color: #141414;
+  padding: 0px 12px 0px 12px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.medicinDeliveryDate {
+  font-size: 12px;
+  color: #141414;
+  padding: 0px 12px 0px 12px;
+  margin: 0px 0px 0px 0px;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+}
+.medicineCategory {
+  font-size: 12px;
+  color: #000000a6;
+  font-family: poppins, sans-serif;
+  padding: 4px 12px 15px 12px;
+  margin: 0px 0px 0px 0px;
+}
+.medicineBtn {
+  border: none;
+  border-radius: 200px;
+  color: white;
+  background-color: #103178;
+  margin: 0px 10px 25px 10px;
+  padding: 10px 0px 10px 0px;
+}
+.imageContainer {
+  margin: 15px 0px 15px 0px;
+}
+.medicinePrice {
+  display: flex;
+  gap: 3px;
+}
+.originalPrice {
+  color: #b5b5b5;
+  text-decoration: line-through;
+  font-family: "Courier New", Courier, monospace;
+}
+.discountPercentage {
+  color: #d9008d;
+}
+
+@media screen and (max-width: 600px) {
+  .featuredTitle {
+    margin-left: 10px;
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .featuredDesc {
+    margin: 0px 0px 25px 10px;
+    color: #64748b;
+  }
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    width: 475px;
+    margin: auto;
+    gap: 40px;
+    margin: 0px 10px 80px 10px;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #d9d8d8;
+    border-radius: 15px;
+    height: fit-content;
+  }
+  .medicineDetails {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .medicineName {
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    margin: 5px 0px 0px 0px;
+    padding: 2px 30px 2px 30px;
+  }
+  .medicineManufacturer {
+    font-size: 10px;
+    color: #000000a6;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 0px 0px;
+  }
+  .medicineDescription {
+    font-size: 10px;
+    color: #b5b5b5;
+    padding: 4px 30px 4px 30px;
+    margin: 0px 0px 0px 0px;
+  }
+  .medicinePrice {
+    font-size: 12px;
+    color: #141414;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 0px 0px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  .medicinDeliveryDate {
+    font-size: 10px;
+    color: #141414;
+    padding: 0px 30px 0px 30px;
+    margin: 0px 0px 0px 0px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+  }
+  .medicineCategory {
+    font-size: 12px;
+    color: #000000a6;
+    font-family: poppins, sans-serif;
+    padding: 4px 30px 15px 30px;
+    margin: 0px 0px 0px 0px;
+  }
+  .medicineBtn {
+    border: none;
+    border-radius: 200px;
+    color: white;
+    width: 178px;
+    background-color: #103178;
+    margin: 0px 32px 25px 32px;
+    padding: 10px 0px 10px 0px;
+  }
+  .imageContainer {
+    margin: 15px 0px 15px 0px;
+  }
+  .medicinePrice {
+    display: flex;
+    gap: 3px;
+  }
+  .originalPrice {
+    color: #b5b5b5;
+    text-decoration: line-through;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .discountPercentage {
+    color: #d9008d;
+  }
+}

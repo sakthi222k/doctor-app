@@ -1,0 +1,243 @@
+.reviewUpper {
+  position: relative;
+  margin: auto;
+  width: 1370px;
+  z-index: 3;
+}
+.reviewBox {
+  display: flex;
+  background-color: #0451e9;
+  height: 290px;
+  margin: -150px 10px 0px 10px;
+  justify-content: space-between;
+  padding: 50px 90px 50px 90px;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+}
+.reviewContanier {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.iconImageContainer {
+  display: flex;
+  width: 83px;
+  height: 83px;
+  background-color: white;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.iconTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.h1 {
+  font-size: 66px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.paraTag {
+  font-size: 18px;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ReviewSection {
+  position: relative;
+  margin-top: -140px;
+  background-image: url("/Images/doctor-bg2.jpg");
+  height: 890px;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.subReviewSection {
+  content: "";
+  position: absolute;
+  height: 890px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.938);
+  z-index: 2;
+}
+.ReviewFlexContainer {
+  margin-top: 250px;
+  display: flex;
+  margin-left: 80px;
+  gap: 30px;
+  height: 415px;
+}
+.reviewTestimonialText {
+  font-size: 14px;
+  background-color: #02c9b81c;
+  color: #02c9b8;
+  padding: 12px 20px 10px 20px;
+  width: fit-content;
+  font-weight: 600;
+  letter-spacing: 3px;
+  border-radius: 4px;
+}
+.reviewHeaderText {
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.clientContainer {
+  background-color: #6d787d1c;
+  padding: 40px 0px 0px 45px;
+  position: relative;
+  overflow: hidden;
+}
+.sliderTrack {
+  display: flex;
+  gap: 75px;
+  transition: transform 2.2s ease-in-out;
+}
+.clientSubContainer {
+  background-color: #ffffff;
+  width: 435px;
+  height: 345px;
+  margin: 35px 0px 0px 35px;
+  border-radius: 15px;
+}
+.clientContainerImage {
+  display: flex;
+  gap: 40px;
+  align-items: last baseline;
+}
+.clientImage1 {
+  border-radius: 10px;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.clientPara {
+  font-size: 20px;
+  padding: 25px 27px 25px 32px;
+  color: #4b5563;
+}
+.clientContainerComments {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px 0px 32px;
+}
+.doctorGirlImage1 {
+  display: none;
+}
+.clipWrapper1{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .reviewUpper {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    z-index: 3;
+  }
+  .reviewBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:  #0451e9;
+    height: fit-content;
+    margin: -300px 12px 50px 12px;
+    justify-content: space-between;
+    padding: 50px 40px 40px 45px;
+    border-radius: 10px;
+    color: white;
+    align-items: flex-start;
+  }
+  .h1 {
+    font-size: 40px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .paraTag {
+    font-size: 18px;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .reviewContanier {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  .ReviewSection {
+    height: 861px;
+  }
+  .subReviewSection {
+    height: 861px;
+  }
+  .ReviewFlexContainer {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    gap: 25px;
+    height: fit-content;
+    align-items: center;
+  }
+  .doctorGirlImage {
+    display: none;
+  }
+  .doctorGirlImage1 {
+    display: block;
+  }
+  .reviewTestimonialText {
+    padding: 8px 23px 6px 23px;
+    margin: auto;
+  }
+  .reviewHeaderText {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  .clientContainer {
+    background-color: #6d787d1c;
+    padding: 40px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+  .sliderTrack {
+    display: flex;
+    gap: 20px;
+    transition: transform 2.2s ease-in-out;
+  }
+  .clientSubContainer {
+    background-color: #ffffff;
+    width: 473px;
+    height: 283px;
+    margin: 35px 0px 0px 0px;
+    position: relative;
+    border-radius: 15px;
+  }
+  .clientContainerImage {
+    display: flex;
+    gap: 40px;
+    align-items: last baseline;
+  }
+  .clientImage1 {
+    border-radius: 10px;
+    margin-top: -40px;
+    margin-left: 35px;
+  }
+  .clientPara {
+    font-size: 16px;
+    padding: 25px 27px 25px 32px;
+    color: #4b5563;
+  }
+  .clientContainerComments {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 32px;
+  }
+  .clipWrapper1{
+    display: block;
+  }
+  .clipWrapper{
+    display: none;
+  }
+}

@@ -1,0 +1,93 @@
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px 50px 20px;
+  font-family: sans-serif;
+}
+
+/* Tracker Section */
+.trackerCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 40px;
+}
+
+.stepContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #10b981; /* Green color from image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.circle.inactive { background: #d1d5db; }
+
+/* Connecting Line */
+.stepContainer::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #d1d5db;
+  z-index: 0;
+}
+
+/* Table Section */
+.tableCard {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow-x: auto; /* Makes table responsive on mobile */
+}
+
+.tableWrapper {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableWrapper th {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 2px solid #f3f4f6;
+  color: #6b7280;
+}
+
+.tableWrapper td {
+  padding: 15px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badgeDone { background: #e0e7ff; color: #4f46e5; }
+.badgeActive { background: #d1fae5; color: #065f46; }
+.badgePending { background: #f3f4f6; color: #374151; }

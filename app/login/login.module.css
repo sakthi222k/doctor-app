@@ -1,0 +1,137 @@
+.loginWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  padding: 20px;
+}
+
+.loginContainer {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  min-height: 600px;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Left Section: Form */
+.formSection {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formSection h1 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 40px;
+  font-weight: 800;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputField {
+  padding: 16px 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.inputField:focus {
+  border-color: #38b2ac; /* Teal color from image */
+  box-shadow: 0 0 0 4px rgba(56, 178, 172, 0.1);
+}
+
+.optionsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4a5568;
+  cursor: pointer;
+}
+
+.forgotPass {
+  color: #38b2ac;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginBtn {
+  background-color: #38b2ac;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.loginBtn:hover {
+  background-color: #319795;
+}
+
+.signupText {
+  text-align: center;
+  margin-top: 30px;
+  color: #718096;
+}
+
+.signupLink {
+  color: #38b2ac;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Right Section: Illustration */
+.illustrationSection {
+  flex: 1.2;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-image: linear-gradient(to bottom right, #ffffff 60%, #38b2ac 60%);
+}
+
+.doctorIllustration {
+  width: 90%;
+  height: auto;
+  z-index: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .illustrationSection {
+    display: none; /* Hide image on smaller tablets/mobile */
+  }
+  .formSection {
+    padding: 40px 20px;
+  }
+}

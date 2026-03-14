@@ -1,0 +1,99 @@
+/* container */
+.payContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  min-height: 80vh;
+}
+
+/* card */
+.payCard {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px;
+  font-family: "Inter", sans-serif;
+}
+
+/* title */
+.payTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+/* items */
+.payItems {
+  margin-bottom: 20px;
+}
+
+.payItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.ItemName {
+  font-weight: 500;
+}
+
+.ItemPrice {
+  font-weight: 500;
+}
+
+/* total */
+.payTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+/* payment options */
+.payMethods {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payMethods label {
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+}
+
+.payMethods input {
+  margin-right: 8px;
+}
+
+/* pay button */
+.payButton {
+  width: 100%;
+  padding: 14px;
+  margin-top: 30px;
+  background: #1f2937;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.payButton:hover {
+  background: #111827;
+}

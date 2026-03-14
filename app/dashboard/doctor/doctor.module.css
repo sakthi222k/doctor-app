@@ -1,0 +1,185 @@
+.dashboardWrapper {
+  background-color: #f8f9fd;
+  min-height: 100vh;
+}
+
+.dashboardContainer {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* Sidebar Styling */
+.sideBar {
+  width: 260px;
+  background: white;
+  border-right: 1px solid #edf2f7;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 3rem;
+}
+
+.logoBox {
+  width: 35px;
+  height: 35px;
+  background: #10b981;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.navItem {
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navItemActive {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #10b981;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+/* Main Content */
+.mainContent {
+  flex: 1;
+  padding: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerFlex {
+  margin-bottom: 2rem;
+}
+
+.headerFlex h2 {
+  font-size: 1.8rem;
+  color: #002345;
+  margin-bottom: 8px;
+}
+
+/* Stats Cards */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.statCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.statIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.earningsIcon { background: #ecfdf5; color: #10b981; }
+.apptIcon { background: #eff6ff; color: #3b82f6; }
+
+/* Patient List & Cards */
+.patientList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.patientCard {
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.patientCard:hover {
+  border-color: #10b981;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.patientInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-width: 250px;
+}
+
+.avatarCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Status Badges */
+.statusBadge {
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.confirmed { background: #ecfdf5; color: #047857; }
+.pending { background: #fffbeb; color: #b45309; }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .patientCard {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sideBar { display: none; }
+  .mainContent { padding: 1.5rem; }
+}

@@ -1,0 +1,378 @@
+.aboutContent {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  width: 100%;
+  margin: auto;
+}
+.aboutTitle {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutSubTitle {
+  color: #5ce1e6;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutParagraph {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+.aboutParagraph::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 720px;
+  width: 93.5px;
+  height: 4px;
+  background-color: #5ce1e6;
+}
+.servicesContainer {
+  padding: 100px 160px 70px 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.servicesTitlecontainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+.servicesTitle {
+  font-size: 40px;
+  color: #002345;
+  font-weight: 700;
+}
+.servicesSubtitle {
+  color: #486683;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0px 270px 0px 270px;
+}
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.serviceCard {
+  padding: 20px 20px 20px 20px;
+  width: 370px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.serviceCardContent {
+  padding: 0px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.serviceCardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002345;
+  margin: 30px 0px 10px 0px;
+}
+.serviceCardDescription {
+  font-size: 16px;
+  color: #8c99a5;
+ font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 0px 15px 0px;
+  font-weight: 400;
+  width: 280px;
+}
+.bookButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 30px 11px 30px;
+  border: 2px solid #f1eeee;
+  color: #002345;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+.arrowIcon {
+  color: #5ce1e6;
+  font-size: 18px;
+}
+.bookButton:hover {
+  background-color: #002345;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+/* //Appointment Section */
+.appointment {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.appointmentImage1 {
+  border-radius: 15px;
+}
+.appontmentContainerOverAll {
+  background-color: #2490eb;
+  color: #ffffff;
+  border-radius: 15px;
+  width: 914.66px;
+  height: 488.8px;
+  padding: 55px 55px 55px 55px;
+}
+.BookTitle {
+  font-size: 28px;
+}
+.appointmentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.appointmentContainerItems {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+}
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 10px;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease-in;
+  z-index: 1000;
+  color: black;
+  list-style: none;
+  padding: 8px 0px 3px 20px;
+}
+.dropdown li {
+  padding: 5px 0px 10px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #747e8b;
+  font-weight: 400;
+}
+
+.dropdown li:hover {
+  background: #f3fefe;
+}
+
+.noData {
+  color: #999;
+  cursor: default;
+}
+
+.appointmentInput {
+  color: #939daa;
+  width: 252px;
+  height: 55px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0px 0px 0px 20px;
+  font-weight: 600;
+}
+.appointmentInput:focus {
+  outline: none;
+}
+.appointmentLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+.appointmentBtn {
+  margin-top: 30px;
+  width: 804px;
+  height: 55px;
+  background-color: #2490eb;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.appointmentBtn:hover {
+  color: black;
+  background-color: #ffffff;
+  transition: 0.8s;
+}
+.appointmentImage2 {
+  display: none;
+}
+.layer {
+  background-color: #051828;
+  margin-top: -250px;
+  width: 100%;
+  height: 270px;
+}
+.aboutImage1 {
+  display: none;
+}
+.imageWrapper {
+  position: relative;
+  width: 330px;
+  aspect-ratio: 330 / 211;
+  overflow: hidden;
+}
+.serviceImage1 {
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .aboutImage1 {
+    display: block;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutContent {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .aboutTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutSubTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutParagraph {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 18px;
+  }
+  .aboutParagraph::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    width: 93.5px;
+    height: 4px;
+    background-color: #5ce1e6;
+  }
+  .servicesContainer {
+    padding: 100px 15px 40px 15px;
+  }
+  .servicesTitlecontainer {
+    text-align: center;
+    gap: 15px;
+  }
+  .servicesTitle {
+    font-size: 36px;
+  }
+  .servicesSubtitle {
+    margin: 0px 0px 0px 0px;
+  }
+  .servicesGrid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .serviceCard {
+    padding: 20px 20px 20px 20px;
+    width: 450px;
+    height: 524px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  .serviceCardContent {
+    padding: 0px 5px 25px 5px;
+  }
+  .serviceCardTitle {
+    font-size: 20px;
+    margin: 30px 0px 10px 0px;
+  }
+  .serviceCardDescription {
+    font-size: 15px;
+    margin: 0px 0px 15px 0px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .imageWrapper {
+    position: relative;
+    width: 414px;
+    aspect-ratio: 414 / 265;
+    overflow: hidden;
+  }
+
+  /* //Appointment Section */
+
+  .appointment {
+    scroll-margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+  }
+  .appointmentImage1 {
+    display: none;
+  }
+  .appointmentImage2 {
+    display: block;
+    border-radius: 15px;
+    margin: 0px 12px 12px 12px;
+  }
+  .appontmentContainerOverAll {
+    width: 470px;
+    height: fit-content;
+    padding: 30px 30px 30px 30px;
+    margin: 12px 12px 0px 12px;
+  }
+  .appointmentContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .appointmentContainerItems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
+  }
+  .appointmentInput {
+    color: #aab4c1;
+    width: 100%;
+    height: 43px;
+  }
+  .appointmentBtn {
+    width: 100%;
+    height: 47px;
+  }
+  .layer {
+    background-color: #051828;
+    margin-top: -640px;
+    width: 100%;
+    height: 640px;
+  }
+}

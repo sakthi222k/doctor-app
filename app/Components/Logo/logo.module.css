@@ -1,0 +1,38 @@
+.reviewLogo {
+  margin: 120px 80px 100px 80px;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.reviewLogoContainer {
+  display: flex;
+  gap: 95px;
+  transition: transform 2.2s ease-in-out;
+  padding: 0px 0px 0px 55px;
+}
+.IogoImage {
+  width: 204px;
+  height: 122px;
+  margin: 0px 0px 0px 0px;
+}
+.reviewLogoContainer1 {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .reviewLogo {
+    margin: 545px 10px 50px 10px;
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+  }
+  .reviewLogoContainer1 {
+    display: block;
+    display: flex;
+    gap: 110px;
+    transition: transform 2.2s ease-in-out;
+    padding: 0px 0px 0px 58px;
+  }
+  .reviewLogoContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,203 @@
+.FullHeroSection {
+  z-index: 0;
+  background-image: url("/Images/doctor-bg2.jpg");
+  height: 791px;
+  background-size: cover;
+  background-position: center;
+}
+
+.HeroSection::before {
+  content: "";
+  position: absolute;
+  height: 800px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.938);
+  z-index: 2;
+}
+.HeroSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 120px;
+  z-index: 2;
+  padding: 160px 20px 30px 80px;
+}
+.contentText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.titleText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 68px;
+  color: #172965;
+  font-weight: 700;
+}
+.titleText1 {
+  font-size: 68px;
+  color: #172965;
+  font-weight: 700;
+  display: none;
+}
+.ParaText {
+  color: #4b5563;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.paperContainer {
+  display: flex;
+  gap: 2px;
+  height: 200px;
+}
+.paperText {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+.paperTextContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+}
+.ImageSection {
+  z-index: 2;
+}
+.doctorImage1 {
+  display: none;
+}
+.appointmentBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #2490eb;
+  border-radius: 40px;
+  border: none;
+  padding: 8px 24px 8px 6px;
+  width: 200px;
+  font-weight: 500;
+}
+.arrowIcon {
+  color: #02c9b8;
+  background-color: white;
+  border-radius: 100px;
+  font-size: 45px;
+  padding: 12px;
+}
+.appointmentBtn:hover {
+  cursor: pointer;
+  background-color: #28241f;
+}
+.ArrowForwardIcon {
+  color: #02c9b8;
+  background-color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 200%;
+}
+.ArrowForwardIcon:hover {
+  cursor: pointer;
+  background-color: #2490eb;
+  color: white;
+}
+.paperContainer2 {
+  display: none;
+}
+.shapeImage5 {
+  position: absolute;
+  margin-top: 160px;
+  left: 740px;
+  z-index: 9999;
+}
+.shapeImage6 {
+  position: absolute;
+  margin-top: 500px;
+  left: 600px;
+  z-index: 9999;
+}
+@media screen and (max-width: 600px) {
+  .HeroSection::before {
+    top: 80px;
+  }
+  .contentSection {
+    padding: 50px 5px 35px 5px;
+    flex-wrap: wrap;
+  }
+  .contentText {
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .titleText {
+    display: none;
+  }
+  .titleText1 {
+    display: block;
+    font-size: 40px;
+  }
+  .ParaText {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .paperContainer {
+    display: none;
+  }
+  .HeroSection::before {
+    background-color: rgba(255, 255, 255, 0.941);
+  }
+  .HeroSection {
+    flex-direction: column;
+  }
+  .doctorImage {
+    display: none;
+  }
+  .doctorImage1 {
+    display: block;
+  }
+  .ImageSection {
+    margin: auto;
+  }
+  .paperContainer2 {
+    display: grid;
+    margin: -50px 15px 10px 15px;
+    z-index: 3;
+    border-radius: 15px;
+    gap: 0;
+    padding: 30px;
+    background-color: white;
+  }
+  .paperText {
+    gap: 30px;
+    padding: 0;
+  }
+  .paperTextContent {
+    width: 100%;
+  }
+  .shapeImage5 {
+    position: absolute;
+    margin-top: 140px;
+    left: 225px;
+    z-index: 9999;
+  }
+  .shapeImage6 {
+    position: absolute;
+    margin-top: 480px;
+    left: 10px;
+    z-index: 3;
+  }
+  .ImageSection {
+    z-index: 3;
+  }
+}

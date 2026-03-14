@@ -1,0 +1,337 @@
+.aboutContent {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  width: 100%;
+  margin: auto;
+}
+.aboutTitle {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutSubTitle {
+  color: #5ce1e6;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutParagraph {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+.aboutParagraph::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 720px;
+  width: 93.5px;
+  height: 4px;
+  background-color: #5ce1e6;
+}
+.aboutImage1 {
+  display: none;
+}
+.ImageWrapper {
+  position: relative;
+  width: 676px;
+  height: 670px;
+}
+.contactImage {
+  border-radius: 12px;
+}
+.ContactOverAllContainer {
+  background-color: #fbfbfb;
+  display: flex;
+  padding: 120px 0px 120px 0px;
+  justify-content: center;
+  gap: 60px;
+}
+/* appointment */
+
+.appontmentContainerOverAll {
+  background-color: #2490eb;
+  color: #ffffff;
+  border-radius: 12px;
+  width: 646px;
+  height: 670px;
+  padding: 35px 35px 35px 35px;
+}
+.BookTitle {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.appointmentContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.appointmentContainerItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 220px;
+  overflow-y: auto;
+  animation: fadeIn 0.2s ease-in;
+  z-index: 1000;
+  color: black;
+  list-style: none;
+  padding: 8px 0px 3px 20px;
+}
+.dropdown li {
+  padding: 5px 0px 10px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #747e8b;
+  font-weight: 400;
+}
+
+.dropdown li:hover {
+  background: #f3fefe;
+}
+
+.noData {
+  color: #999;
+  cursor: default;
+}
+
+.appointmentInput {
+  color: #939daa;
+  width: 276px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 0px 0px 0px 20px;
+  font-weight: 600;
+}
+.appointmentInput:focus {
+  outline: none;
+}
+.appointmentLabel {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px;
+}
+.appointmentBtn {
+  margin-top: 30px;
+  width: 100%;
+  height: 55px;
+  background-color: #2490eb;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.appointmentBtn:hover {
+  color: black;
+  background-color: #ffffff;
+  transition: 0.8s;
+}
+.appointmentContainerItems1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+}
+.appointmentInput1 {
+  color: #939daa;
+  width: 100%;
+  height: 176px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  padding: 15px 0px 0px 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.appointmentInput1:focus {
+  outline: none;
+}
+
+/* Contact details */
+
+.ContactDetails {
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  padding: 0px 80px 120px 80px;
+  gap: 25px;
+}
+.ContactDetailsContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 466px;
+  background-color: #ffffff;
+  padding: 38px 32px 38px 32px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.ContactIcon {
+  background-color: #2490eb;
+  color: #ffffff;
+  font-size: 80px;
+  padding: 25px;
+  border-radius: 200%;
+}
+.contactPara1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4b5563;
+  margin: 0px;
+}
+.contactPara2 {
+  font-size: 18px;
+  color: #28241f;
+  margin: 0px;
+}
+.contactTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Map Css Style */
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mapOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutImage1 {
+    display: block;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutContent {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .aboutTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutSubTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutParagraph {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 18px;
+    width: 100%;
+  }
+  .aboutParagraph::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    width: 93.5px;
+    height: 4px;
+    background-color: #5ce1e6;
+  }
+
+  .ImageWrapper {
+    width: 470px;
+    height: 466px;
+  }
+  .ContactOverAllContainer {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 90px 0px;
+    align-items: center;
+    gap: 20px;
+  }
+  /* appointment */
+
+  .appontmentContainerOverAll {
+    background-color: #2490eb;
+    color: #ffffff;
+    border-radius: 12px;
+    width: 470px;
+    height: 845px;
+    padding: 30px 30px 30px 30px;
+  }
+  .BookTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .appointmentContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .appointmentInput {
+    width: 100%;
+    font-size: 14px;
+  }
+  .appointmentInput1 {
+    font-size: 14px;
+    height: 146px;
+    margin-bottom: 15px;
+  }
+
+  /* Contact details */
+
+  .ContactDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 90px 0px;
+    gap: 0px;
+  }
+  .ContactDetailsContainer {
+    display: flex;
+    align-items: center;
+    width: 470px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Map Css Style */
+
+  .mapContainer {
+    width: 100%;
+    height: 410px;;
+  }
+}

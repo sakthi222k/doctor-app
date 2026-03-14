@@ -1,0 +1,186 @@
+.aboutContent {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  width: 100%;
+  margin: auto;
+}
+.aboutTitle {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutSubTitle {
+  color: #5ce1e6;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutParagraph {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+.aboutParagraph::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 720px;
+  width: 93.5px;
+  height: 4px;
+  background-color: #5ce1e6;
+}
+.aboutImage1 {
+  display: none;
+}
+.aboutDoctorContainer {
+  display: flex;
+  padding: 120px 0px 100px 40px;
+  justify-content: center;
+  width: 100%;
+  gap: 140px;
+}
+.welcomeText {
+  font-size: 40px;
+  color: #002345;
+  font-weight: 700;
+  margin-bottom: 25px;
+  line-height: 60px;
+}
+.aboutDoctorContent {
+  width: 635px;
+  padding: 0px 50px 0px 50px;
+}
+.aboutDoctorImageContainer {
+  width: 635px;
+  padding: 0px 50px 0px 50px;
+}
+.aboutDoctorText {
+  color: #486683;
+  font-size: 17px;
+  font-weight: 500;
+  width: 495px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+.aboutDoctorContentBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.aboutDoctorContentBox {
+  display: flex;
+  gap: 30px;
+}
+.aboutDoctorContentBoxText {
+  width: 451px;
+}
+.aboutDoctorContentBoxTextTitle {
+  font-size: 22px;
+  color: #002345;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.aboutDoctorContentBoxIcon1 {
+  font-size: 44px;
+  color: #52cbcb;
+}
+.aboutDoctorContentBoxIcon2 {
+  font-size: 46px;
+  color: #52cbcb;
+}
+.aboutDoctorContentBoxTextParagraph {
+  color: #486683;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.shapeImage3 {
+  position: absolute;
+  margin-top: 40px;
+  right: 15px;
+}
+
+/* .shape1 {
+  position: absolute;
+  margin-top: 80px;
+  left: 60px;
+}
+.shapeImage6 {
+  position: absolute;
+  margin-top: 180px;
+  right: 100px;
+  z-index: 9999;
+} */
+@media screen and (max-width: 600px) {
+  .aboutComponent {
+    margin-top: -400px;
+  }
+  .shapeImage3 {
+    position: absolute;
+    top: 1080px;
+    right: 30px;
+  }
+  .aboutDoctorContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 10px 0px;
+    gap: 50px;
+  }
+  .welcomeText {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .aboutDoctorContent {
+    width: 500px;
+    padding: 0px 15px 0px 15px;
+  }
+  .aboutDoctorImageContainer {
+    width: 500px;
+    padding: 0px 0px 80px 0px;
+  }
+  .aboutDoctorContentBoxes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aboutDoctorContentBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .aboutImage1 {
+    display: block;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutContent {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .aboutTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutSubTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutParagraph {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 18px;
+  }
+  .aboutParagraph::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    width: 93.5px;
+    height: 4px;
+    background-color: #5ce1e6;
+  }
+}

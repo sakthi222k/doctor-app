@@ -1,0 +1,92 @@
+.NavbarItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 50px 10px 50px;
+}
+.NavbarItems1 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: space-around;
+  padding: 0px 50px 0px 80px;
+}
+.navbarLinks {
+  color: #28241f;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+}
+.navbarLinks > a {
+  text-decoration: none;
+  color: #28241f;
+   transition: 0.2s;
+}
+.navbarLinks > a:hover {
+  cursor: pointer;
+  color: rgb(20, 219, 219);
+   transition: 0.4s;
+}
+.EmgNo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.appointmentBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #02c9b8;
+  border-radius: 40px;
+  border: none;
+  padding: 7px 24px 7px 4px;
+  width: 190px;
+  font-weight: 500;
+}
+.arrowIcon {
+  color: #02c9b8;
+  background-color: white;
+  border-radius: 100px;
+  font-size: 45px;
+  padding: 12px;
+}
+.appointmentBtn:hover {
+  cursor: pointer;
+  background-color: #28241f;
+}
+.arrowIcon:hover {
+  color: white;
+  background-color: #02c9b8;
+}
+.menuIcon1{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  .navbarLinks {
+    display: none;
+  }
+  .EmgNo {
+    display: none;
+  }
+  .appointmentBtn {
+    display: none;
+  }
+  .NavbarItems {
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .LogoImage {
+    margin-right: 150px;
+  }
+  .NavbarItems1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px 0px 20px;
+  }
+  .menuIcon1{
+    display: block;
+    margin-left: 5px;
+  }
+}

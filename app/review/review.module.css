@@ -1,0 +1,135 @@
+.aboutContent {
+  position: absolute;
+  text-align: center;
+  top: 340px;
+  width: 100%;
+  margin: auto;
+}
+.aboutTitle {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutSubTitle {
+  color: #5ce1e6;
+  font-size: 70px;
+  font-weight: 700;
+}
+.aboutParagraph {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 18px;
+}
+.aboutParagraph::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 720px;
+  width: 93.5px;
+  height: 4px;
+  background-color: #5ce1e6;
+}
+.aboutImage1 {
+  display: none;
+}
+
+/* //new */
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 250px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title { font-size: 2rem; color: #1f2937; margin-bottom: 10px; }
+.subTitle { color: #6b7280; font-size: 1.1rem; }
+
+/* The Grid - This handles responsiveness automatically */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* The Card Styling */
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar { border-radius: 50%; object-fit: cover; }
+
+.name { font-size: 1.1rem; font-weight: 600; color: #111827; }
+.titleRole { font-size: 0.9rem; color: #6b7280; }
+
+.quoteIcon { font-size: 2rem; color: #fbbf24; margin-bottom: 10px; }
+.reviewText { color: #4b5563; line-height: 1.6; font-style: italic; }
+.footerWrapper{
+  margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .aboutImage1 {
+    display: block;
+  }
+  .aboutImage {
+    display: none;
+  }
+  .aboutContent {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .aboutTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutSubTitle {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .aboutParagraph {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-bottom: 18px;
+  }
+  .aboutParagraph::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+    width: 93.5px;
+    height: 4px;
+    background-color: #5ce1e6;
+  }
+  .footerWrapper{
+  margin-top: 550px;
+}
+
+
+}
