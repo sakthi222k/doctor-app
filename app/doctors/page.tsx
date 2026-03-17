@@ -28,7 +28,7 @@ export default function DoctorsPage(){
           {doctors.map((doc: any) => (
             <div key={doc._id} className={styles.card}>
               <img
-                src={`http://localhost:5001${doc.profileImage}`}
+                src={`${API_BASE_URL}${doc.profileImage}`}
                 alt="doctor"
                 className={styles.image}
               />

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import styles from "@/app/appointmentPayment/[id]/appointmentPayment.module.css";
 import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
@@ -10,6 +10,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
 import loadingAnimation from "@/public/Animation/Sandy Loading.json";
 import { API_BASE_URL } from "@/app/lib/api.js";
+import toast from "react-hot-toast";  
+
 
 declare global {
   interface Window {
@@ -20,7 +22,7 @@ declare global {
 export default function AppointmentPage() {
   const { id } = useParams();
   const doctorId = id as string;
-
+  const router = useRouter();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -147,7 +149,8 @@ export default function AppointmentPage() {
           const data = await verifyRes.json();
 
           if (data.success) {
-            alert("Appointment Confirmed 🎉");
+            toast.success("Appointment Confirmed 🎉");
+            router.push("/dashboard/patient");
           } else {
             alert("Payment verification failed");
           }
