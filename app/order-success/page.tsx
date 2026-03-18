@@ -10,6 +10,8 @@ import styles from "@/app/order-success/order.module.css";
 import { useCart } from "@/app/context/CartContext";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
+import { API_MEDICINES_URL } from "../lib/api";
+
 
 export default function OrderSuccessPage() {
   const router = useRouter();
@@ -114,7 +116,7 @@ export default function OrderSuccessPage() {
                 <div key={item._id} className={styles.orderItem}>
                   <div className={styles.itemInfo}>
                     <img
-                      src={`http://localhost:5000${item.image}`}
+                      src={`${API_MEDICINES_URL}${item.image}`}
                       alt={item.name}
                       className={styles.itemImage}
                     />
@@ -136,7 +138,7 @@ export default function OrderSuccessPage() {
             </div>
 
             <Link href="/order-tracking">
-              <button className={styles.homeButton}>Order Status</button>
+              <button className={styles.homeButton}> Track Order </button>
             </Link>
           </div>
         </div>

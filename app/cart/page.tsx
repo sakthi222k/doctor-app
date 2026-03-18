@@ -12,6 +12,7 @@ import Header from "@/app/Components/Header/Header";
 import Footer from "@/app/Components/Footer/Footer";
 import Empty from "@/public/Animation/empty.json";
 import Link from "next/link";
+import { API_MEDICINES_URL } from "../lib/api";
 
 export default function CartPage() {
   const [loading, setLoading] = useState(true);
@@ -125,7 +126,7 @@ export default function CartPage() {
                 <div key={item._id} className={styles.cartItemCard}>
                   <div className={styles.productInfo}>
                     <img
-                      src={`http://localhost:5000${item.image}`}
+                      src={`${API_MEDICINES_URL}${item.image}`}
                       alt={item.name}
                     />
                     <div className={styles.productDetails}>

@@ -11,7 +11,8 @@ import Image from "next/image";
 import BannerSlide from "../Components/BannerSlide/BannerSlide";
 import Footer from "../Components/Footer/Footer";
 import { useCart } from "@/app/context/CartContext";
-import toast from "react-hot-toast"
+import toast from "react-hot-toast";
+import { API_MEDICINES_URL } from "../lib/api";
 
 export default function ShopPage() {
   const [loading, setLoading] = useState(true);
@@ -48,7 +49,7 @@ export default function ShopPage() {
 
     let [medicines, setMedicines] = useState<Medicine[]>([]);
     useEffect(() => {
-      fetch("http://localhost:5000/api/medicines",{method:"GET"})
+      fetch(`${API_MEDICINES_URL}/api/medicines`, { method: "GET" })
         .then((res) => res.json())
         .then((data) => setMedicines(data));
     }, []);
@@ -102,7 +103,7 @@ export default function ShopPage() {
                 <div key={medicines._id} className={styles.card}>
                   <div className={styles.imageContainer}>
                     <Image
-                      src={`http://localhost:5000${medicines.image}`}
+                      src={`${API_MEDICINES_URL}${medicines.image}`}
                       alt={medicines.name}
                       width={180}
                       height={180}

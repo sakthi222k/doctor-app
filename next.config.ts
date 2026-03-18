@@ -5,13 +5,12 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "localhost",
-        port: "5000",
+        protocol: "https", // ✅ must be https
+        hostname: "doctor-app-medicines-2.onrender.com",
         pathname: "/images/**",
-      }
-    ]
-  }
+      },
+    ],
+  },
 };
 
 export default nextConfig;
