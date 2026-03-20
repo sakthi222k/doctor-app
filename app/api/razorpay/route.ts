@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
+export const runtime = "nodejs";
 
 // ✅ Prevent Next.js from running this at build time
 export const dynamic = "force-dynamic";
