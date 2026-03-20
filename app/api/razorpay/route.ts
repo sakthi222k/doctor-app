@@ -1,16 +1,21 @@
 import { NextResponse } from "next/server";
 import Razorpay from "razorpay";
 
-const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID!,
-  key_secret: process.env.RAZORPAY_KEY_SECRET!,
-});
+// ✅ Prevent Next.js from running this at build time
+export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  const {amount} = await req.json();
+  const { amount } = await req.json();
+
   try {
+    // ✅ Move inside function (important for deployment)
+    const razorpay = new Razorpay({
+      key_id: process.env.RAZORPAY_KEY_ID!,
+      key_secret: process.env.RAZORPAY_KEY_SECRET!,
+    });
+
     const order = await razorpay.orders.create({
-      amount: amount * 100, 
+      amount: amount * 100,
       currency: "INR",
       receipt: `receipt_${Date.now()}`,
     });
