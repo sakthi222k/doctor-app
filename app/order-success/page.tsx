@@ -1,36 +1,33 @@
 "use client";
 
+import { Suspense, useEffect, useState } from "react";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import successCheck from "@/public/Animation/Success-Check.json";
 import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
-import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import styles from "@/app/order-success/order.module.css";
 import { useCart } from "@/app/context/CartContext";
-// import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { API_MEDICINES_URL } from "../lib/api";
 
-
-export default function OrderSuccessPage() {
-  // const router = useRouter();
+// 🔁 YOUR ORIGINAL CODE MOVED HERE (NO LOGIC CHANGE)
+function OrderSuccessContent() {
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // // Pre-remove any HTML preloader (optional)
     const pre = document.getElementById("initial-preloader");
     if (pre) pre.remove();
 
-    // simulate data load
     const timer = setTimeout(() => setLoading(false), 1000);
     return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // go to top
+    window.scrollTo(0, 0);
   }, []);
+
   const { finalPrice, cart } = useCart();
   const [orderId, setOrderId] = useState<string | null>(null);
 
@@ -45,6 +42,7 @@ export default function OrderSuccessPage() {
   }, [searchParams]);
 
   if (!orderId) return null;
+
   return (
     <div>
       <AnimatePresence>
@@ -64,7 +62,6 @@ export default function OrderSuccessPage() {
               zIndex: 9999,
             }}
           >
-            {/* Lottie animation */}
             <Lottie
               animationData={loadingAnimation}
               loop={true}
@@ -73,6 +70,7 @@ export default function OrderSuccessPage() {
           </motion.div>
         )}
       </AnimatePresence>
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: loading ? 0 : 1 }}
@@ -80,7 +78,6 @@ export default function OrderSuccessPage() {
       >
         <div className={styles.successContainer}>
           <div className={styles.successCard}>
-            {/* Green Checkmark */}
             <div className={styles.successIcon}>
               <Lottie
                 className={styles.doctorIllustration}
@@ -88,18 +85,6 @@ export default function OrderSuccessPage() {
                 loop={false}
                 autoplay={true}
               />
-              {/* <svg
-              width="40"
-              height="40"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#10b981"
-              strokeWidth="3"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg> */}
             </div>
 
             <h1 className={styles.successTitle}>Thank you for your purchase</h1>
@@ -110,7 +95,6 @@ export default function OrderSuccessPage() {
               Your order number is <strong>#{orderId}</strong>
             </p>
 
-            {/* Order Summary */}
             <div className={styles.orderSummary}>
               {cart.map((item) => (
                 <div key={item._id} className={styles.orderItem}>
@@ -138,11 +122,20 @@ export default function OrderSuccessPage() {
             </div>
 
             <Link href="/order-tracking">
-              <button className={styles.homeButton}> Track Order </button>
+              <button className={styles.homeButton}>Track Order</button>
             </Link>
           </div>
         </div>
       </motion.div>
     </div>
+  );
+}
+
+// ✅ ONLY THIS PART ADDED FOR DEPLOYMENT
+export default function OrderSuccessPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <OrderSuccessContent />
+    </Suspense>
   );
 }
