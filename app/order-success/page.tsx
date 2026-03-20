@@ -8,13 +8,13 @@ import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import styles from "@/app/order-success/order.module.css";
 import { useCart } from "@/app/context/CartContext";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { API_MEDICINES_URL } from "../lib/api";
 
 
 export default function OrderSuccessPage() {
-  const router = useRouter();
+  // const router = useRouter();
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
 
@@ -104,7 +104,7 @@ export default function OrderSuccessPage() {
 
             <h1 className={styles.successTitle}>Thank you for your purchase</h1>
             <p className={styles.successSubtitle}>
-              We've received your order and it will ship in 5–7 business days.
+              We have received your order and it will ship in 5–7 business days.
             </p>
             <p className={styles.orderNumber}>
               Your order number is <strong>#{orderId}</strong>

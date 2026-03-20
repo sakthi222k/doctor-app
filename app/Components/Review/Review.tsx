@@ -207,9 +207,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctors went above and beyond to ensure I received
-                        best possible treatment. I am Grateful for their
-                        dedication & would trust them with my health any day."
+                        &quot;The doctors went above and beyond to ensure I
+                        received best possible treatment. I am Grateful for
+                        their dedication & would trust them with my health any
+                        day.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -246,10 +247,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctor provided exceptional care and patiently
+                        &quot;The doctor provided exceptional care and patiently
                         explained every detail. I felt truly supported
                         throughout the treatment and highly appreciate their
-                        expertise."
+                        expertise.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -286,10 +287,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "I am extremely satisfied with the doctor’s
+                        &quot;I am extremely satisfied with the doctor’s
                         professionalism. Their calm approach and timely
                         diagnosis helped me recover faster than expected. Highly
-                        recommended."
+                        recommended.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -326,9 +327,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctors went above and beyond to ensure I received
-                        best possible treatment. I am Grateful for their
-                        dedication & would trust them with my health any day."
+                        &quot;The doctors went above and beyond to ensure I
+                        received best possible treatment. I am Grateful for
+                        their dedication & would trust them with my health any
+                        day.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -365,10 +367,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctor provided exceptional care and patiently
+                        &quot;The doctor provided exceptional care and patiently
                         explained every detail. I felt truly supported
                         throughout the treatment and highly appreciate their
-                        expertise."
+                        expertise.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -405,10 +407,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "I am extremely satisfied with the doctor’s
+                        &quot;I am extremely satisfied with the doctor’s
                         professionalism. Their calm approach and timely
                         diagnosis helped me recover faster than expected. Highly
-                        recommended."
+                        recommended.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -450,9 +452,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctors went above and beyond to ensure I received
-                        best possible treatment. I am Grateful for their
-                        dedication & would trust them with my health any day."
+                        &quot;The doctors went above and beyond to ensure I
+                        received best possible treatment. I am Grateful for
+                        their dedication & would trust them with my health any
+                        day.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -489,10 +492,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctor provided exceptional care and patiently
+                        &quot;The doctor provided exceptional care and patiently
                         explained every detail. I felt truly supported
                         throughout the treatment and highly appreciate their
-                        expertise."
+                        expertise.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -529,10 +532,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "I am extremely satisfied with the doctor’s
+                        &quot;I am extremely satisfied with the doctor’s
                         professionalism. Their calm approach and timely
                         diagnosis helped me recover faster than expected. Highly
-                        recommended."
+                        recommended.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -569,9 +572,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctors went above and beyond to ensure I received
-                        best possible treatment. I am Grateful for their
-                        dedication & would trust them with my health any day."
+                        &quot;The doctors went above and beyond to ensure I
+                        received best possible treatment. I am Grateful for
+                        their dedication & would trust them with my health any
+                        day.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -608,10 +612,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctor provided exceptional care and patiently
+                        &quot;The doctor provided exceptional care and patiently
                         explained every detail. I felt truly supported
                         throughout the treatment and highly appreciate their
-                        expertise."
+                        expertise.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -648,10 +652,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "I am extremely satisfied with the doctor’s
+                        &quot;I am extremely satisfied with the doctor’s
                         professionalism. Their calm approach and timely
                         diagnosis helped me recover faster than expected. Highly
-                        recommended."
+                        recommended.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -688,9 +692,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctors went above and beyond to ensure I received
-                        best possible treatment. I am Grateful for their
-                        dedication & would trust them with my health any day."
+                        &quot;The doctors went above and beyond to ensure I
+                        received best possible treatment. I am Grateful for
+                        their dedication & would trust them with my health any
+                        day.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -727,10 +732,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "The doctor provided exceptional care and patiently
+                        &quot;The doctor provided exceptional care and patiently
                         explained every detail. I felt truly supported
                         throughout the treatment and highly appreciate their
-                        expertise."
+                        expertise.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
@@ -767,10 +772,10 @@ export default function Review() {
                         </Stack>
                       </div>
                       <p className={styles.clientPara}>
-                        "I am extremely satisfied with the doctor’s
+                        &quot;I am extremely satisfied with the doctor’s
                         professionalism. Their calm approach and timely
                         diagnosis helped me recover faster than expected. Highly
-                        recommended."
+                        recommended.&quot;
                       </p>
                       <div className={styles.clientContainerComments}>
                         <div>
