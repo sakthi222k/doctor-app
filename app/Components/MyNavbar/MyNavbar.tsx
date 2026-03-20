@@ -1,21 +1,21 @@
 // components/MyNavbar.tsx
 "use client";
 import React, { useState, useEffect } from "react";
-import { Paper } from "@mui/material";
+// import { Paper } from "@mui/material";
 import { IoMenu } from "react-icons/io5";
 import SideNavbar from "../SideNavbar/SideNavbar";
 import Image from "next/image";
-import { MdOutlineShoppingCart } from "react-icons/md";
+// import { MdOutlineShoppingCart } from "react-icons/md";
 import { LiaHeadsetSolid } from "react-icons/lia";
 import { styled } from "@mui/material/styles";
-import IconButton from "@mui/material/IconButton";
+// import IconButton from "@mui/material/IconButton";
 import Badge, { badgeClasses } from "@mui/material/Badge";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import Button from "react-bootstrap/Button";
 import { IoIosArrowForward } from "react-icons/io";
 import styles from "@/app/Components/MyNavbar/mynavbar.module.css";
 import { motion } from "framer-motion";
-import { faL } from "@fortawesome/free-solid-svg-icons";
+// import { faL } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useCart } from "@/app/context/CartContext";
 

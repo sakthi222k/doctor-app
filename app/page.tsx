@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import HomePage from "@/app/Components/Home/Home";

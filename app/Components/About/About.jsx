@@ -1,5 +1,5 @@
 "use client";
-import { Paper } from "@mui/material";
+// import { Paper } from "@mui/material";
 import Image from "next/image";
 import { easeIn, motion } from "framer-motion";
 import styles from "@/app/Components/About/about.module.css";

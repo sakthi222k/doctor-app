@@ -8,7 +8,8 @@ import { FaYoutube } from "react-icons/fa";
 import { RiLinkedinFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { easeIn, easeInOut, easeOut, motion } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -56,13 +57,13 @@ export default function Footer() {
         }}
         className={styles.FooterShape1}
       >
-      <Image
-        className={styles.shapeImage3}
-        src="/Images/left-shape.png"
-        alt="Logo"
-        width={259}
-        height={166}
-      />
+        <Image
+          className={styles.shapeImage3}
+          src="/Images/left-shape.png"
+          alt="Logo"
+          width={259}
+          height={166}
+        />
       </motion.div>
       <div className={styles.footer}>
         <div className={styles.footerContent}>
@@ -97,19 +98,19 @@ export default function Footer() {
           <div className={styles.footerLinks}>
             <h4 className={styles.footerLinksTitle}>Quick Links</h4>
             <span className={styles.navbarLinks}>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </span>
             <span className={styles.navbarLinks}>
-              <a href="/about">About Us</a>
+              <Link href="/about">About Us</Link>
             </span>
             <span className={styles.navbarLinks}>
-              <a href="/services">Services</a>
+              <Link href="/services">Services</Link>
             </span>
             <span className={styles.navbarLinks}>
-              <a href="/review">Reviews</a>
+              <Link href="/review">Reviews</Link>
             </span>
             <span className={styles.navbarLinks}>
-              <a href="/contact">Contact Us</a>
+              <Link href="/contact">Contact Us</Link>
             </span>
           </div>
 

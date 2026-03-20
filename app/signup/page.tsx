@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "@/app/signup/signup.module.css";
 import Link from "next/link";
 import Lottie from "lottie-react";
-import signUpAnim from "@/public/Animation/Online Work.json";
+import signUpAnim from "@/public/Animation/Online-Work.json";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { API_BASE_URL } from "@/app/lib/api.js";

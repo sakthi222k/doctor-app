@@ -4,7 +4,7 @@ import styles from "../shop/shop.module.css";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import MyNavbar from "../Components/MyNavbar/MyNavbar";
 import Header from "../Components/Header/Header";
 import Image from "next/image";
@@ -47,7 +47,7 @@ export default function ShopPage() {
       deliveryBy?: string;
     }
 
-    let [medicines, setMedicines] = useState<Medicine[]>([]);
+    const [medicines, setMedicines] = useState<Medicine[]>([]);
     useEffect(() => {
       fetch(`${API_MEDICINES_URL}/api/medicines`, { method: "GET" })
         .then((res) => res.json())

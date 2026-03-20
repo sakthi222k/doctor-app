@@ -3,13 +3,13 @@
 import { useEffect, useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import Image from "next/image";
 import styles from "@/app/services/services.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { Paper } from "@mui/material";
+// import { Paper } from "@mui/material";
 import Footer from "@/app/Components/Footer/Footer";
 
 const options = [

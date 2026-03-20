@@ -2,7 +2,7 @@
 import styles from "@/app/review/review.module.css";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import { useState, useEffect } from "react";
 import Header from "../Components/Header/Header";
 import MyNavbar from "../Components/MyNavbar/MyNavbar";

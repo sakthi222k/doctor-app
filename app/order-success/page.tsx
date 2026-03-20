@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Lottie from "lottie-react";
-import successCheck from "@/public/Animation/Success Check.json";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import successCheck from "@/public/Animation/Success-Check.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import styles from "@/app/order-success/order.module.css";

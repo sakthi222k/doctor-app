@@ -6,7 +6,7 @@ import Link from "next/link";
 import register from "@/public/Animation/register.json";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import toast from "react-hot-toast";
 import {API_BASE_URL}  from "@/app/lib/api.js";
 

@@ -1,4 +1,4 @@
-import { Paper, TextField, Typography ,Button} from "@mui/material";
+import { Paper, TextField, Button} from "@mui/material";
 import Checkbox from '@mui/material/Checkbox';
 import { FcGoogle } from "react-icons/fc";
 

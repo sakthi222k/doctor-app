@@ -8,7 +8,7 @@ import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import Footer from "@/app/Components/Footer/Footer";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import { API_BASE_URL } from "@/app/lib/api.js";
 import toast from "react-hot-toast";  
 
@@ -40,7 +40,7 @@ export default function AppointmentPage() {
   }, []);
 
   const [doctor, setDoctor] = useState<any>(null);
-  const [selectedDate, setSelectedDate] = useState("");
+  // const [selectedDate, setSelectedDate] = useState("");
   const [slots, setSlots] = useState<any[]>([]);
   const [selectedSlot, setSelectedSlot] = useState<any>(null);
   const [sumbitloading, setSubmitLoading] = useState(false);

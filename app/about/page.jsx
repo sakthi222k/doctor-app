@@ -3,7 +3,7 @@ import Header from "@/app/Components/Header/Header";
 import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
-import loadingAnimation from "@/public/Animation/Sandy Loading.json";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/app/about/about.module.css";

@@ -2,7 +2,7 @@
 
 import styles from "@/app/Components/BannerSlide/BannerSlide.module.css";
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const banners = [
@@ -24,13 +24,13 @@ const Mobilebanners = [
 const slidesMobile = [...Mobilebanners, ...Mobilebanners];
 
 const MOBILE_SLIDE_WIDTH = 350;
-const MOBILE_SLIDE_HEIGHT = 450;
+// const MOBILE_SLIDE_HEIGHT = 450;
 const MOBILE_IMAGE_COUNT = Mobilebanners.length;
 
 const slides = [...banners, ...banners];
 
 const SLIDE_WIDTH = 1214;
-const SLIDE_HEIGHT = 350;
+// const SLIDE_HEIGHT = 350;
 const IMAGE_COUNT = banners.length;
 
 export default function BannerSlide() {
