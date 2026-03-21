@@ -4,18 +4,20 @@ import MyNavbar from "@/app/Components/MyNavbar/MyNavbar";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
 import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
-import { useState, useEffect,useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "@/app/contact/contact.module.css";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 import { SlLocationPin } from "react-icons/sl";
-import Footer from "@/app/Components/Footer/Footer"
+import Footer from "@/app/Components/Footer/Footer";
+import Link from "next/link";
 
 const options = [
   "Cardiology department",
   "Dermatology department",
   "Neurology department",
+  "Others",
 ];
 
 export default function ContactPage() {
@@ -34,33 +36,30 @@ export default function ContactPage() {
   useEffect(() => {
     window.scrollTo(0, 0); // go to top
   }, []);
-     const [open, setOpen] = useState(false);
-      const [value, setValue] = useState("");
-     const boxRef = useRef<HTMLDivElement | null>(null);
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState("");
+  const boxRef = useRef<HTMLDivElement | null>(null);
 
-    
-      // Close dropdown when clicking outside
-      useEffect(() => {
-        const handleClickOutside = (e: MouseEvent) => {
-          if (
-            boxRef.current &&
-            e.target instanceof Node &&
-            !boxRef.current.contains(e.target)
-          ) {
-            setOpen(false);
-          }
-        };
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        boxRef.current &&
+        e.target instanceof Node &&
+        !boxRef.current.contains(e.target)
+      ) {
+        setOpen(false);
+      }
+    };
 
-        document.addEventListener("mousedown", handleClickOutside);
-        return () =>
-          document.removeEventListener("mousedown", handleClickOutside);
-      }, []);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
-    
-      // Filter options based on input
-      const filteredOptions = options.filter((item) =>
-        item.toLowerCase().includes(value.toLowerCase())
-      );
+  // Filter options based on input
+  const filteredOptions = options.filter((item) =>
+    item.toLowerCase().includes(value.toLowerCase()),
+  );
   return (
     <div>
       <AnimatePresence>
@@ -202,9 +201,11 @@ export default function ContactPage() {
                     className={styles.appointmentInput1}
                   />
                 </div>
-                <button className={styles.appointmentBtn}>
-                  Make An Appointment
-                </button>
+                <Link href="/login">
+                  <button className={styles.appointmentBtn}>
+                    Make An Appointment
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -249,8 +250,8 @@ export default function ContactPage() {
             className={styles.mapOverlay}
             aria-label="Open location in Google Maps"
           />
-              </div>
-              <Footer />
+        </div>
+        <Footer />
       </motion.div>
     </div>
   );

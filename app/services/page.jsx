@@ -11,11 +11,13 @@ import styles from "@/app/services/services.module.css";
 import { FaLongArrowAltRight } from "react-icons/fa";
 // import { Paper } from "@mui/material";
 import Footer from "@/app/Components/Footer/Footer";
+import Link from "next/link";
 
 const options = [
   "Cardiology department",
   "Dermatology department",
   "Neurology department",
+  "Others",
 ];
 export default function PageService() {
   const targetRef = useRef(null);
@@ -372,9 +374,11 @@ export default function PageService() {
                 />
               </div>
             </div>
+            <Link href="/login"> 
             <button className={styles.appointmentBtn}>
               Make An Appointment
             </button>
+            </Link>
           </div>
           <div className={styles.appointmentImage}>
             <Image

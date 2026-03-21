@@ -93,7 +93,9 @@ export default function Home() {
                   width={36}
                   height={44}
                 />
-                <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                <Link href="/login">
+                  <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                </Link>
               </motion.div>
               <motion.p
                 style={{ fontSize: "20px", color: "#28241f" }}
@@ -125,7 +127,9 @@ export default function Home() {
                   width={36}
                   height={44}
                 />
-                <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                <Link href="/dashboard/patient">
+                  <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                </Link>
               </motion.div>
               <motion.p
                 initial={{ y: 40, opacity: 0 }}
@@ -134,7 +138,7 @@ export default function Home() {
                 viewport={{ once: true, amount: 0.3 }}
                 style={{ fontSize: "20px", color: "#28241f" }}
               >
-                Book An Appointment
+                Appointment Details
               </motion.p>
             </div>
 

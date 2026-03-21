@@ -5,11 +5,13 @@ import { BsHeartPulse } from "react-icons/bs";
 import { PiStethoscope } from "react-icons/pi";
 import { CiHospital1 } from "react-icons/ci";
 import { useState, useRef, useEffect } from "react";
+import Link from "next/link";
 
 const options = [
   "Cardiology department",
   "Dermatology department",
   "Neurology department",
+  "Others",
 ];
 export default function MeetYourDoctor() {
   const [open, setOpen] = useState(false);
@@ -29,7 +31,7 @@ export default function MeetYourDoctor() {
 
   // Filter options based on input
   const filteredOptions = options.filter((item) =>
-    item.toLowerCase().includes(value.toLowerCase())
+    item.toLowerCase().includes(value.toLowerCase()),
   );
 
   return (
@@ -179,7 +181,11 @@ export default function MeetYourDoctor() {
               />
             </div>
           </div>
-          <button className={styles.appointmentBtn}>Make An Appointment</button>
+          <Link href="/login">
+            <button className={styles.appointmentBtn}>
+              Make An Appointment
+            </button>
+          </Link>
         </div>
         <div className={styles.appointmentImage}>
           <Image
@@ -198,9 +204,7 @@ export default function MeetYourDoctor() {
           />
         </div>
       </div>
-      <div className={styles.layer}> 
-
-      </div>
+      <div className={styles.layer}></div>
     </>
   );
 }
