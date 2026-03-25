@@ -1,6 +1,7 @@
 .NavbarItems {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 10px 50px 10px 50px;
 }
 .NavbarItems1 {
