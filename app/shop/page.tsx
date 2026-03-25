@@ -19,15 +19,15 @@ export default function ShopPage() {
 
   const {addToCart} = useCart();
 
-  useEffect(() => {
-    // // Pre-remove any HTML preloader (optional)
-    const pre = document.getElementById("initial-preloader");
-    if (pre) pre.remove();
+  // useEffect(() => {
+  //   // // Pre-remove any HTML preloader (optional)
+  //   const pre = document.getElementById("initial-preloader");
+  //   if (pre) pre.remove();
 
-    // simulate data load
-    const timer = setTimeout(() => setLoading(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
+  //   // simulate data load
+  //   const timer = setTimeout(() => setLoading(false), 1000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0); // go to top
@@ -49,9 +49,19 @@ export default function ShopPage() {
 
     const [medicines, setMedicines] = useState<Medicine[]>([]);
     useEffect(() => {
-      fetch(`${API_MEDICINES_URL}/api/medicines`, { method: "GET" })
-        .then((res) => res.json())
-        .then((data) => setMedicines(data));
+      const fetchData = async () => {
+        try {
+          const res = await fetch(`${API_MEDICINES_URL}/api/medicines`);
+          const data = await res.json();
+          setMedicines(data);
+        } catch (err) {
+          console.error("Error fetching medicines:", err);
+        } finally {
+          setLoading(false); // ✅ only stop loading after API completes
+        }
+      };
+
+      fetchData();
     }, []);
 
   return (
@@ -77,7 +87,7 @@ export default function ShopPage() {
             <Lottie
               animationData={loadingAnimation}
               loop={true}
-              className="lottieAnime"
+              className={styles.lottieAnime}
             />
           </motion.div>
         )}
@@ -91,12 +101,12 @@ export default function ShopPage() {
         <MyNavbar />
         <BannerSlide />
         <div>
-        <div className={styles.featured}>
-          <h2 className={styles.featuredTitle}>Featured Medicines</h2>
-          <p className={styles.featuredDesc}>
-            Quality healthcare products delivered to your doorstep.
-          </p>
-        </div>
+          <div className={styles.featured}>
+            <h2 className={styles.featuredTitle}>Featured Medicines</h2>
+            <p className={styles.featuredDesc}>
+              Quality healthcare products delivered to your doorstep.
+            </p>
+          </div>
           <div className={styles.gridContainer}>
             {medicines.map((medicines) => {
               return (

@@ -75,7 +75,7 @@ export default function ReviewPage() {
             <Lottie
               animationData={loadingAnimation}
               loop={true}
-              className="lottieAnime"
+              className={styles.lottieAnime}
             />
           </motion.div>
         )}

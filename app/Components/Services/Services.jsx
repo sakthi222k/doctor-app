@@ -178,7 +178,7 @@ export default function Services() {
                 className={styles.serviceImage1}
                 src={selected.image}
                 alt="serviceImage"
-                width={432}
+                width={400}
                 height={455}
               />
             </div>

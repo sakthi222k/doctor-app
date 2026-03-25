@@ -72,6 +72,7 @@ export default function BannerSlide() {
                 src={img}
                 alt="banner"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className={styles.image}
                 priority={i === 0}
               />
@@ -109,6 +110,7 @@ export default function BannerSlide() {
                 src={img}
                 alt="banner"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className={styles.image}
                 priority={i === 0}
               />
@@ -123,7 +125,9 @@ export default function BannerSlide() {
               className={styles.dot}
               style={{
                 background:
-                  current % MOBILE_IMAGE_COUNT === index ? "#2563eb" : "#cbd5e1",
+                  current % MOBILE_IMAGE_COUNT === index
+                    ? "#2563eb"
+                    : "#cbd5e1",
               }}
               onClick={() => setCurrent(index)}
             />

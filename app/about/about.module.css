@@ -99,6 +99,14 @@
   margin-top: 40px;
   right: 15px;
 }
+.line{
+  display: none;
+}
+.lottieAnime{
+    /* margin: -90px 0px 0px -100px; */
+    width: 500px;
+  height: 500px;
+}
 
 /* .shape1 {
   position: absolute;
@@ -178,9 +186,14 @@
     content: "";
     position: absolute;
     bottom: 0px;
-    left: 200px;
+    left: 165px;
     width: 93.5px;
     height: 4px;
     background-color: #5ce1e6;
   }
+  .lottieAnime{
+    margin: -90px 0px 0px -100px;
+    width: 400px;
+    height: 400px;
+}
 }

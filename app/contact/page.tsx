@@ -83,7 +83,7 @@ export default function ContactPage() {
             <Lottie
               animationData={loadingAnimation}
               loop={true}
-              className="lottieAnime"
+              className={styles.lottieAnime}
             />
           </motion.div>
         )}

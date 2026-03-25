@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import styles from "@/app/signup/signup.module.css";
 import Link from "next/link";
 import Lottie from "lottie-react";
@@ -8,9 +8,27 @@ import signUpAnim from "@/public/Animation/Online-Work.json";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import { API_BASE_URL } from "@/app/lib/api.js";
+import { AnimatePresence, motion } from "framer-motion";
+import loadingAnimation from "@/public/Animation/Sandy-Loading.json";
 
 export default function RegisterPage() {
   const router = useRouter();
+
+   const [pageLoading, setPageLoading] = useState(true);
+  
+    useEffect(() => {
+      // // Pre-remove any HTML preloader (optional)
+      const pre = document.getElementById("initial-preloader");
+      if (pre) pre.remove();
+  
+      // simulate data load
+      const timer = setTimeout(() => setPageLoading(false), 1000);
+      return () => clearTimeout(timer);
+    }, []);
+  
+    useEffect(() => {
+      window.scrollTo(0, 0); // go to top
+    }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -50,76 +68,112 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        {/* Form Section */}
-        <div className={styles.formSection}>
-          <h1>Create an Account</h1>
-          <form onSubmit={handleRegister}>
-            <div className={styles.inputGroup}>
-              <input
-                name="name"
-                type="text"
-                placeholder="Full Name"
-                className={styles.inputField}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className={styles.inputGroup}>
-              <input
-                name="email"
-                type="email"
-                placeholder="Email"
-                className={styles.inputField}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className={styles.inputGroup}>
-              <input
-                name="password"
-                type="password"
-                placeholder="Password"
-                className={styles.inputField}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className={styles.inputGroup}>
-              <select
-                name="role"
-                className={styles.selectField}
-                onChange={handleChange}
-              >
-                <option value="patient">Patient</option>
-                <option value="doctor">Doctor</option>
-              </select>
+    <div>
+      <AnimatePresence>
+        {pageLoading && (
+          <motion.div
+            key={loading ? "loading" : "content"}
+            initial={{ opacity: 1, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1, transition: { duration: 0.1 } }}
+            style={{
+              position: "fixed",
+              inset: 0,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              backgroundColor: "#fff",
+              zIndex: 9999,
+            }}
+          >
+            {/* Lottie animation */}
+            <Lottie
+              animationData={loadingAnimation}
+              loop={true}
+              className={styles.lottieAnime}
+            />
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: pageLoading ? 0 : 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className={styles.wrapper}>
+          <div className={styles.container}>
+            {/* Form Section */}
+            <div className={styles.formSection}>
+              <h1>Create an Account</h1>
+              <form onSubmit={handleRegister}>
+                <div className={styles.inputGroup}>
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Full Name"
+                    className={styles.inputField}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    className={styles.inputField}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <input
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    className={styles.inputField}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className={styles.inputGroup}>
+                  <select
+                    name="role"
+                    className={styles.selectField}
+                    onChange={handleChange}
+                  >
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  className={styles.signupBtn}
+                  disabled={loading}
+                >
+                  {loading ? "Registering..." : "Sign Up"}
+                </button>
+              </form>
+
+              <p className={styles.loginText}>
+                Already have an account?{" "}
+                <Link href="/login" className={styles.loginLink}>
+                  Login
+                </Link>
+              </p>
             </div>
 
-            <button
-              type="submit"
-              className={styles.signupBtn}
-              disabled={loading}
-            >
-              {loading ? "Registering..." : "Sign Up"}
-            </button>
-          </form>
-
-          <p className={styles.loginText}>
-            Already have an account?{" "}
-            <Link href="/login" className={styles.loginLink}>
-              Login
-            </Link>
-          </p>
+            {/* Right Side Illustration */}
+            <div className={styles.illustrationSection}>
+              <Lottie
+                style={{ width: "400px", height: "400px" }}
+                animationData={signUpAnim}
+              />
+            </div>
+          </div>
         </div>
-
-        {/* Right Side Illustration */}
-        <div className={styles.illustrationSection}>
-          <Lottie style={{width:"400px",height: "400px"
-          }} animationData={signUpAnim} />
-        </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

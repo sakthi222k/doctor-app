@@ -84,8 +84,8 @@ function MyNavbar() {
           <span className={styles.navbarLinks}>
             <Link href="/contact">Contact Us</Link>
           </span>
-          <Link href="/cart">
-            <ShoppingCartIcon style={{ fontSize: "22px" }} />
+          <Link href="/cart" className={styles.shoppingCartIcon}>
+            <ShoppingCartIcon />
             {totalItems > 0 && (
               <CartBadge
                 badgeContent={totalItems}
@@ -115,7 +115,7 @@ function MyNavbar() {
             </Button>
           </Link>
           <IoMenu
-            className="menuIcon"
+            className={styles.menuIcon}
             onClick={toggleSideNavbar}
             style={{ fontSize: "30px", cursor: "pointer" }}
           />
@@ -161,7 +161,7 @@ function MyNavbar() {
           <span className={styles.navbarLinks}>
             <Link href="/contact">Contact Us</Link>
           </span>
-          <Link href="/cart" style={{ padding: "0px 10px 0px 0px" }}>
+          <Link href="/cart" className={styles.shoppingCartIcon1}>
             <ShoppingCartIcon style={{ fontSize: "22px" }} />
             {totalItems > 0 && (
               <CartBadge

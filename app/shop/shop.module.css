@@ -105,6 +105,10 @@
 .discountPercentage {
   color: #d9008d;
 }
+.lottieAnime{
+  width: 500px;
+  height: 500px;
+}
 
 @media screen and (max-width: 600px) {
   .featuredTitle {
@@ -210,4 +214,9 @@
   .discountPercentage {
     color: #d9008d;
   }
+  .lottieAnime{
+    margin: -1300px 100px 0px -700px;
+    width: 400px;
+    height: 400px;
+}
 }

@@ -51,7 +51,7 @@ export default function AboutPage() {
             <Lottie
               animationData={loadingAnimation}
               loop={true}
-              className="lottieAnime"
+              className={styles.lottieAnime}
             />
           </motion.div>
         )}
@@ -84,6 +84,7 @@ export default function AboutPage() {
             <p className={styles.aboutParagraph}>
               Your health is our priority, every step of the way
             </p>
+            <span className={styles.line}></span>
           </div>
         </div>
         {/* <Image

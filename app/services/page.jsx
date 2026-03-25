@@ -89,7 +89,7 @@ export default function PageService() {
             <Lottie
               animationData={loadingAnimation}
               loop={true}
-              className="lottieAnime"
+              className={styles.lottieAnime}
             />
           </motion.div>
         )}
@@ -374,10 +374,10 @@ export default function PageService() {
                 />
               </div>
             </div>
-            <Link href="/login"> 
-            <button className={styles.appointmentBtn}>
-              Make An Appointment
-            </button>
+            <Link href="/login">
+              <button className={styles.appointmentBtn}>
+                Make An Appointment
+              </button>
             </Link>
           </div>
           <div className={styles.appointmentImage}>

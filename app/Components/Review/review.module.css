@@ -198,7 +198,7 @@
     background-color: #6d787d1c;
     padding: 40px 0px 0px 0px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden !important;
     margin-bottom: 100px;
   }
   .sliderTrack {

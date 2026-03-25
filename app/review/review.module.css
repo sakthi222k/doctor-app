@@ -45,8 +45,15 @@
   margin-bottom: 50px;
 }
 
-.title { font-size: 2rem; color: #1f2937; margin-bottom: 10px; }
-.subTitle { color: #6b7280; font-size: 1.1rem; }
+.title {
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+.subTitle {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
 
 /* The Grid - This handles responsiveness automatically */
 .grid {
@@ -62,7 +69,9 @@
   border-radius: 16px;
   border: 1px solid #f3f4f6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
 }
@@ -79,17 +88,38 @@
   margin-bottom: 20px;
 }
 
-.avatar { border-radius: 50%; object-fit: cover; }
-
-.name { font-size: 1.1rem; font-weight: 600; color: #111827; }
-.titleRole { font-size: 0.9rem; color: #6b7280; }
-
-.quoteIcon { font-size: 2rem; color: #fbbf24; margin-bottom: 10px; }
-.reviewText { color: #4b5563; line-height: 1.6; font-style: italic; }
-.footerWrapper{
-  margin-top: 100px;
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+.titleRole {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.quoteIcon {
+  font-size: 2rem;
+  color: #fbbf24;
+  margin-bottom: 10px;
+}
+.reviewText {
+  color: #4b5563;
+  line-height: 1.6;
+  font-style: italic;
+}
+.footerWrapper {
+  margin-top: 100px;
+}
+.lottieAnime {
+  width: 500px;
+  height: 500px;
+}
 
 @media screen and (max-width: 600px) {
   .aboutImage1 {
@@ -122,14 +152,23 @@
     content: "";
     position: absolute;
     bottom: 0px;
-    left: 200px;
+    left: 165px;
     width: 93.5px;
     height: 4px;
     background-color: #5ce1e6;
   }
-  .footerWrapper{
-  margin-top: 550px;
-}
-
-
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 120px;
+  }
+  .footerWrapper {
+    margin-top: 550px;
+  }
+  .lottieAnime {
+     margin: -1900px 100px 0px -1100px;
+    width: 400px;
+    height: 400px;
+  }
 }
