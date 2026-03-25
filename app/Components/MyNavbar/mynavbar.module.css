@@ -80,6 +80,7 @@
     display: none;
   }
   .NavbarItems {
+    justify-content: space-between;
     padding: 10px;
   }
   .LogoImage {
