@@ -287,7 +287,9 @@
     gap: 20px;
   }
   /* appointment */
-
+.appointmentContainer{
+  width: 95%;
+}
   .appontmentContainerOverAll {
     margin-top: 20px;
     width: 100%;

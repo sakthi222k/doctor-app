@@ -127,7 +127,7 @@ export default function ContactPage() {
               fill
             />
           </div>
-          <div>
+          <div className={styles.appointmentContainer}>
             <div className={styles.appointment}>
               <div className={styles.appontmentContainerOverAll}>
                 <h1 className={styles.BookTitle}>Book An Appointment</h1>
