@@ -99,12 +99,12 @@
   margin-top: 40px;
   right: 15px;
 }
-.line{
+.line {
   display: none;
 }
-.lottieAnime{
-    /* margin: -90px 0px 0px -100px; */
-    width: 500px;
+.lottieAnime {
+  /* margin: -90px 0px 0px -100px; */
+  width: 500px;
   height: 500px;
 }
 
@@ -135,11 +135,12 @@
     gap: 50px;
   }
   .welcomeText {
-    font-size: 36px;
-    line-height: 50px;
+    margin-bottom: 12px;
+    font-size: 30px;
+    line-height: 42px;
   }
   .aboutDoctorContent {
-    width: 500px;
+    width: 100%;
     padding: 0px 15px 0px 15px;
   }
   .aboutDoctorImageContainer {
@@ -155,6 +156,17 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+  }
+  .aboutDoctorContentBoxText {
+    width: 100%;
+  }
+  .aboutDoctorText {
+    color: #486683;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 35px;
   }
   .aboutImage1 {
     display: block;
@@ -191,9 +203,11 @@
     height: 4px;
     background-color: #5ce1e6;
   }
-  .lottieAnime{
-    margin: -90px 0px 0px -100px;
+  .lottieAnime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
-}
+  }
 }

@@ -84,7 +84,7 @@
 .serviceCardDescription {
   font-size: 16px;
   color: #8c99a5;
- font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: 0px 0px 15px 0px;
   font-weight: 400;
   width: 280px;
@@ -239,9 +239,9 @@
 .serviceImage1 {
   object-fit: cover;
 }
-.lottieAnime{
-    width: 500px;
-    height: 500px;
+.lottieAnime {
+  width: 500px;
+  height: 500px;
 }
 @media screen and (max-width: 600px) {
   .aboutImage1 {
@@ -380,9 +380,11 @@
     width: 100%;
     height: 750px;
   }
-  .lottieAnime{
-    margin: -90px 0px 0px -100px;
+  .lottieAnime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
-}
+  }
 }

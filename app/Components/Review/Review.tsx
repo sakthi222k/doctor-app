@@ -47,7 +47,7 @@ export default function Review() {
      if (!sliderRef1.current) return;
     const slider1 = sliderRef1.current;
     
-       const CARD_WIDTH = 493;
+       const CARD_WIDTH = slider1.children[0].clientWidth + 20; 
     
      let index = 0; // Keeps track of current slide
 

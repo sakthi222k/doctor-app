@@ -336,7 +336,9 @@
     height: 410px;
   }
   .lottieAnime {
-    margin: -90px 0px 0px -100px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
   }

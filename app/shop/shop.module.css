@@ -215,7 +215,9 @@
     color: #d9008d;
   }
   .lottieAnime{
-    margin: -1300px 100px 0px -700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     height: 400px;
 }

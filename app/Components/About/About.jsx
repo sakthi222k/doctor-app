@@ -101,6 +101,7 @@ export default function About({style}) {
               height={311}
               style={{
                 zIndex: "1",
+                width:"400px",
                 padding: "10px 15px 10px 15px",
               }}
             />
@@ -122,7 +123,7 @@ export default function About({style}) {
                 height={204}
                 style={{
                   zIndex: "2",
-                  margin: "0px 0px 0px 297px",
+                  margin: "0px 0px 0px 220px",
                   border: "white solid 10px",
                   borderRadius: "10px",
                 }}
