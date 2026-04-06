@@ -19,15 +19,15 @@ export default function ShopPage() {
 
   const {addToCart} = useCart();
 
-  // useEffect(() => {
-  //   // // Pre-remove any HTML preloader (optional)
-  //   const pre = document.getElementById("initial-preloader");
-  //   if (pre) pre.remove();
+  useEffect(() => {
+    // // Pre-remove any HTML preloader (optional)
+    // const pre = document.getElementById("initial-preloader");
+    // if (pre) pre.remove();
 
-  //   // simulate data load
-  //   const timer = setTimeout(() => setLoading(false), 1000);
-  //   return () => clearTimeout(timer);
-  // }, []);
+    // simulate data load
+    const timer = setTimeout(() => setLoading(false), 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0); // go to top
