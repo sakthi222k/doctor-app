@@ -215,7 +215,9 @@ export default function Home() {
                   width={36}
                   height={44}
                 />
-                <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                <Link href="/login">
+                  <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                </Link>
               </div>
               <p style={{ fontSize: "20px", color: "#28241f" }}>
                 Book An Appointment
@@ -230,10 +232,12 @@ export default function Home() {
                   width={36}
                   height={44}
                 />
-                <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                <Link href="/dashboard/patient">
+                  <IoIosArrowForward className={styles.ArrowForwardIcon} />
+                </Link>
               </div>
               <p style={{ fontSize: "20px", color: "#28241f" }}>
-                Book An Appointment
+                Appointment Details
               </p>
             </div>
 

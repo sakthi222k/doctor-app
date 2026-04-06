@@ -180,6 +180,8 @@ export default function Services() {
                 alt="serviceImage"
                 width={400}
                 height={455}
+                sizes="100vw"
+                style={{ width: "90%", height: "455" }}
               />
             </div>
           </motion.div>
