@@ -48,6 +48,8 @@ export default function LoginPage() {
       console.log("RESPONSE:", data);
 
       if (res.ok) {
+         toast.success("Login Successfully...");
+
         localStorage.setItem("token", data.token);
         localStorage.setItem("role", data.role);
 
@@ -58,10 +60,10 @@ export default function LoginPage() {
           window.location.href = "/doctors";
         }
       } else {
-        alert(data.message || "Login failed");
+        toast.error(data.message || "Login failed");
       }
     } catch (err) {
-      alert("Something went wrong. Please try again.");
+      toast.error("Something went wrong. Please try again.");
     } finally {
       setSetSubmitLoading(false);
     }
@@ -142,7 +144,6 @@ export default function LoginPage() {
                   type="submit"
                   className={styles.loginBtn}
                   disabled={submitloading}
-                  onClick={() => toast.success("Login Successfully...")}
                 >
                   {submitloading ? "Verifying..." : "Login"}
                 </button>
